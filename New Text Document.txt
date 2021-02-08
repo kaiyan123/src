@@ -1,0 +1,433 @@
+::Aspen web server
+
+——Aspen Process Data            <Option Feature="ProcessData.Aspen_Calc" Shared="yes" Cost="54"/>
+				<Option Feature="ProcessData.Aspen_Process_Data" Shared="yes" Cost="104"/>
+				<Option Feature="ProcessData.Cimview" Shared="yes" Cost="48"/>
+				<Option Feature="ProcessData.File" Shared="yes" Cost="48"/>
+				<Option Feature="ProcessData.InfoPlus.21_and_Setcim" Shared="yes" Cost="47"/>
+				<Option Feature="ProcessData.ODM" Shared="yes" Cost="46"/>
+				<Option Feature="ProcessData.OPC_HDA" Shared="yes" Cost="58"/>
+				<Option Feature="ProcessData.PHD" Shared="yes" Cost="46"/>
+				<Option Feature="ProcessData.PI" Shared="yes" Cost="46"/>
+				<Option Feature="ProcessData.RDBMS" Shared="yes" Cost="47"/>
+				<Option Feature="ProcessData.Simulator" Shared="yes" Cost="46"/>
+				<Option Feature="ProcessData.Web.21" Shared="yes" Cost="46"/>
+EIS_ADSA-Cli_IDK
+EIS_APEX_IDK
+EIS_IP21BASE_IDK
+EIS IP21COMMON_IDK
+EIS_PocessData_NET_IDK
+EIS_SQLPLUS_IDK
+EIS_WEB21_IDK
+
+
+——Aspen IP.21 Process Browser	<Option Feature="Web21.Server" Cost="254"/>
+
+EIS_CALC_IDK   
+WEB21cONTROLS 
+WEBCONTROLS WEBTOOLS 
+
+
+——aspenONE Process Explorer (64BIT)  <Option Feature="WebServerx64.PDToGo" Cost="174"/>
+
+MES_APRM_cLIENT_x64
+mes_core_IDK_x64
+mes_core_web_x64
+mes_odbcdriver_x64
+
+	
+——Aspen Audit and Compliance Manager  <Option Feature="AlarmAndEvent.Web_Server" Shared="yes" Cost="93"/>
+				      <Option Feature="AlarmAndEvent.Server" Shared="yes" Cost="110"/>
+
+——Aspen Calc			      <Option Feature="Aspen_Calc.Web_Service" Shared="yes" Cost="46"/>
+
+
+——Aspen InfoPlus.21		       <Option Feature="IP21.WebServices" Shared="yes" Cost="10"/>
+
+			
+——Aspen Production Record Manager	<Option Feature="Batch.Web_Server" Shared="yes" Cost="199"/>
+					<Option Feature="Batch.Web_Service" Shared="yes" Cost="86"/>
+
+
+——Aspen SQLplus			<Option Feature="SQLplus.Web_Service" Shared="yes" Cost="47"/>
+				<Option Feature="SQLplus.WebServer" Shared="yes" Cost="153"/>
+
+				<Option DependOn="TYP_Diagnostics"/>
+				<Option DependOn="TYP_SECURITY_x64"/>	
+				<Option DependOn="TYP_SECURITY_x64"/>
+
+—— ——<Option Id="TYP_ADSA_x64" Name="Aspen Infrastructure" DefaultSelected="no" Title="Aspen Infrastructure" Description="A set of tools for administering Aspen Data Source Architecture." SharedComponent = "TYP_A1ShareX86,TYP_Diagnostics">
+——————Aspen Data Source Architecture <Option Feature="ADSA.WebService" Shared="yes" Cost="30"/>
+		<Option Feature="ADSA.Server" Shared="yes" Cost="21"/>
+		<Option DependOn="TYP_Diagnostics"/>
+ 		<Option DependOn="TYP_A1ShareX86"/>	
+	   —— ——<Option DependOn="TYP_SECURITY_x64"/>
+                       ————Aspen Local Security Server  <Option Feature="ALS.dotNetSecurity" Shared="yes" Cost="1"/>
+							<Option Feature="ALS.WebConsole" Cost="14"/>             
+				   			<Option Feature="ALS.ALSServer" Shared="yes" Cost="55"/>
+
+				   
+     </Option>
+
+---------------------------------------------------------------------------------------------------------------------
+::Aspen Desktop applications
+
+(——Aspen Process Data)		<Option Feature="ProcessData.Aspen_Calc" Shared="yes" Cost="54"/>
+				<Option Feature="ProcessData.Aspen_Process_Data" Shared="yes" Cost="104"/>
+				<Option Feature="ProcessData.Cimview" Shared="yes" Cost="48"/>
+				<Option Feature="ProcessData.File" Shared="yes" Cost="48"/>
+				<Option Feature="ProcessData.InfoPlus.21_and_Setcim" Shared="yes" Cost="47"/>
+				<Option Feature="ProcessData.ODM" Shared="yes" Cost="46"/>
+				<Option Feature="ProcessData.OPC_HDA" Shared="yes" Cost="58"/>
+				<Option Feature="ProcessData.PHD" Shared="yes" Cost="46"/>
+				<Option Feature="ProcessData.PI" Shared="yes" Cost="46"/>
+				<Option Feature="ProcessData.RDBMS" Shared="yes" Cost="47"/>
+				<Option Feature="ProcessData.Simulator" Shared="yes" Cost="46"/>
+				<Option Feature="ProcessData.Web.21" Shared="yes" Cost="46"/>
+
+——Aspen Process Graphic Studio	<Option Feature="WebGraphics.Web._Graphics_Studio" Cost="154"/>
+				<Option Feature="WebGraphics.Web._Graphics_Converters" Cost="58"/>
+
+——Aspen Process Explorer	<Option Feature="APEX.Event21" Cost="74"/>
+				<Option Feature="APEX.Event21_IP21" Cost="55"/>
+				<Option Feature="APEX.Event21_Sim" Cost="55"/>
+				<Option Feature="APEX.GCS" Cost="73"/>
+				<Option Feature="APEX.Main" Cost="180"/>
+				<Option Feature="APEX.Q" Cost="76"/>
+				<Option Feature="APEX.WellTrends" Cost="88"/>
+
+——Aspen Production Record Manager	<Option Feature="Batch.User_Tools" Cost="173"/>
+					<Option Feature="Batch.Software_Development_Kit" Cost="146"/>
+
+——Aspen Production Execution Manager    <Option Feature="AEBRS.User_Tools" Cost="83"/>
+					<Option Feature="AEBRS.User_Tools_JDK" Cost="50"/>
+
+——Aspen SQLplus		        <Option Feature="SQLplus.SQLplus_Client" Shared="yes" Cost="73"/>
+				<Option Feature="SQLplus.SQLplus_ODBC" Cost="51"/>
+
+——Aspen Desktop Apps (64bit)	<Option Feature="DesktopAppsX64.ODBCDrivers" Cost="119"/>
+
+——Aspen Calc			<Option Feature="Aspen_Calc.Aspen_Calc" Shared="yes" Cost="115"/>
+
+——Aspen Production Execution Manager 32bit (AeBRS.ism)	<Option Feature="AEBRS.WD" Cost="10"/>
+							<Option Feature="AEBRS.MOC_Shortcut" Cost="1"/>
+
+					<Option DependOn="TYP_Diagnostics"/>
+					<Option DependOn="TYP_A1ShareX86"/>
+               				<Option DependOn="TYP_A1ShareX64"/>
+---------------------------------------------------------------------------------------------------------------------
+：：Aspen Administration Tools
+
+
+——Aspen InfoPlus.21       <Option Feature="IP21.Admin" Shared="yes" Cost="128"/>
+			  <Option Feature="IP21.DefEdit" Shared="yes" Cost="87"/>
+
+（——Aspen Calc）	          <Option Feature="Aspen_Calc.Aspen_Calc" Shared="yes" Cost="115"/>
+
+（——Aspen Production Execution Manager 32bit）(AeBRS.ism)	
+					<Option Feature="AEBRS.Administration_Tools" Cost="87"/>
+					<Option Feature="AEBRS.Workflow_Templates" Cost="58"/>
+					<Option Feature="AEBRS.Compliance_Manager" Shared="yes" Cost="42"/>
+					<Option Feature="AEBRS.AuditAndComplianceExtractor" Shared="yes" Cost="41"/>
+
+——Aspen Production Record Manager (32bit b21.ism)   <Option Feature="Batch.Administration_Tools" Cost="155"/>
+
+——Aspen Administration Tools (64bit)   <Option Feature="AdminToolsx64.AACMAdmin" Cost="76"/>
+				       <Option Feature="AdminToolsx64.IP21Admin" Cost="85"/>
+				       <Option Feature="AdminToolsx64.ClusterAdmin" Cost="84"/>
+				       <Option Feature="AdminToolsx64.APRMDeskTop" Cost="105"/>
+
+
+——Aspen MES Cluster Administrator	<Option Feature="MESCLUSTER.Admin" Cost="28"/>
+
+
+——Aspen Audit and Compliance Manager	<Option Feature="AlarmAndEvent.Administrator" Cost="83"/>
+
+					<Option DependOn="TYP_Diagnostics"/>
+					<Option DependOn="TYP_A1ShareX86"/>
+               				<Option DependOn="TYP_A1ShareX64"/>
+
+———【Aspen Desktop Applications】		<Option DependOn="TYP_Desktop_x64"/>	
+---------------------------------------------------------------------------------------------------------------------
+
+：：Aspen InfoPlus.21 Server(64bit)
+
+——Aspen Data Source Architecture	<Option Feature="ADSA.Server" Shared="yes" Cost="21"/>							
+——Aspen InfoPlus.21 Server (64bit)      <Option Feature="InfoPlus21x64.CalcServer" Shared="yes" Cost="87"/>
+    				        <Option Feature="InfoPlus21x64.AACM" Shared="yes" Cost="102"/>
+				        <Option Feature="InfoPlus21x64.APRMBCU" Cost="118"/>
+				        <Option Feature="InfoPlus21x64.Server" Cost="237"/>
+
+					<Option DependOn="TYP_Diagnostics"/>
+					<Option DependOn="TYP_A1ShareX86"/>
+               				<Option DependOn="TYP_A1ShareX64"/>	
+
+——【Aspen Administration Tools】		<Option DependOn="TYP_AdmTools_x64"/>
+---------------------------------------------------------------------------------------------------------------
+
+：：Aspen InfoPlus.21 Server(32-bit)
+
+——Aspen Audit and Compliance Manager	<Option Feature="AlarmAndEvent.Server" Shared="yes" Cost="110"/>
+
+——Aspen Data Source Architecture	<Option Feature="ADSA.Server" Shared="yes" Cost="21"/>
+
+——Aspen InfoPlus.21 Server 		<Option Feature="IP21.Adapter" Shared="yes" Cost="68"/>
+					<Option Feature="IP21.Server" Shared="yes" Cost="205"/>
+					<Option Feature="IP21.EventServer" Cost="2"/>
+					<Option Feature="IP21.KPI" Cost="39"/>
+					<Option Feature="IP21.InfoPlus_X" Cost="5"/>
+					<Option Feature="IP21.Replication" Cost="1"/>
+
+——Aspen InfoPlus.21 Compliance		<Option Feature="Compliance21.Compliance21" Shared="yes" Cost="59"/>
+
+——Aspen InfoPlus.21 Accounting		<Option Feature="Accounting21.Accounting21" Shared="yes" Cost="59"/>
+	
+——Aspen Calc				<Option Feature="Aspen_Calc.Aspen_Calc" Shared="yes" Cost="115"/>
+					<Option Feature="Aspen_Calc.CalcService_Server" Shared="yes" Cost="46"/>
+					<Option Feature="Aspen_Calc.InfoBus_Adapter" Shared="yes" Cost="53"/>
+					<Option Feature="Aspen_Calc.ODM" Shared="yes" Cost="161"/>	
+			
+——Aspen OPC Integration Adapter		<Option Feature="OPC_Adapter.EIF" Shared="yes" Cost="53"/>
+					<Option Feature="OPC_Adapter.IDKFolders" Shared="yes" Cost="6"/>
+					<Option Feature="OPC_Adapter.Main" Shared="yes" Cost="19"/>
+
+——Aspen Production Record Manager	<Option Feature="Batch.BCU_Server" Shared="yes" Cost="140"/>
+					<Option Feature="Batch.Golden_Batch" Cost="50"/>
+
+——Aspen Real-Time SPC Analyzer		<Option Feature="Q_Server.Q_Server" Shared="yes" Cost="63"/>	
+			
+——Aspen Cim-IO Interfaces		<Option Feature="CimIO_IF.CIO_SET_CIM" Shared="yes" Cost="23"/>	
+
+					<Option DependOn="TYP_Diagnostics"/>
+					<Option DependOn="TYP_A1ShareX86"/>
+
+——【Aspen Administration Tools】		<Option DependOn="TYP_AdmTools_x64"/>	
+				
+---------------------------------------------------------------------------------------------------------------
+
+：：Aspen Cim-IO Interfaces
+
+    OPC Interfaces:
+	            ——Aspen CIM-IO      	<Option Feature="CIM_IO.Simulation_Server" Cost="75"/>	
+					 	<Option Feature="CIM_IO.Security_Components" Cost="74"/>	
+					 	<Option Feature="CIM_IO.Example_Source" Cost="32"/>	
+					 	<Option Feature="CIM_IO.Core" Shared="yes" Cost="75"/>	
+					
+		——Aspen Cim-IO Interfaces	<Option Feature="CimIO_IF.CIO_OPC_API" Shared="yes" Cost="30"/>				
+         					<Option Feature="CimIO_IF.CIO_OPC_UAI" Shared="yes" Cost="51"/>
+	
+						<Option DependOn="TYP_Diagnostics"/>
+               				        <Option DependOn="TYP_A1ShareX86"/>	
+
+
+    All Other Interfaces:
+
+	——Aspen Cim-IO Interfaces	<Option Feature="CimIO_IF.CIO_YGC_ACG" Shared="yes" Cost="23"/>	
+					<Option Feature="CimIO_IF.CIO_WES_WDP" Shared="yes" Cost="23"/>	
+					<Option Feature="CimIO_IF.CIO_SET_CIM" Shared="yes" Cost="23"/>	
+					<Option Feature="CimIO_IF.CIO_PIH_API" Shared="yes" Cost="23"/>   				
+					<Option Feature="CimIO_IF.CIO_MDX_TCP" Shared="yes" Cost="23"/>	
+					<Option Feature="CimIO_IF.CIO_FRN_RNI" Shared="yes" Cost="23"/>	
+					<Option Feature="CimIO_IF.CIO_FOX_API" Shared="yes" Cost="23"/>	
+					<Option Feature="CimIO_IF.CIO_FCH_CHP" Shared="yes" Cost="24"/>	
+					<Option Feature="CimIO_IF.CIO_BLY_SEM" Shared="yes" Cost="24"/>	
+					<Option Feature="CimIO_IF.CIO_ABD_RSL"  Cost="23"/>				
+					<Option Feature="CimIO_IF.CIO_CIM_PDI" Shared="yes" Cost="2"/>
+
+					<Option DependOn="TYP_Diagnostics"/>
+					<Option DependOn="TYP_A1ShareX86"/>
+---------------------------------------------------------------------------------------------------------------------
+
+：：Aspen Production Record Manager Server(64bit)
+
+——Aspen Production Record Manager Server (64bit)	<Option Feature="APRM_SERVERX64.BCU" Cost="151"/>
+				                        <Option Feature="APRM_SERVERX64.SERVER" Cost="185"/>
+
+               						<Option DependOn="TYP_Diagnostics"/>				
+                					<Option DependOn="TYP_A1ShareX64"/>
+
+——Aspen InfoPlus.21 Server (64bit)            <Option Feature="InfoPlus21x64.AACM" Shared="yes" Cost="102"/>
+——【Aspen Administration Tools】	              <Option DependOn="TYP_AdmTools_x64"/>
+				 
+--------------------------------------------------------------------------------------------------------------------
+
+：：Aspen Production Record Manager Server(32bit)
+
+——Aspen Production Record Manager	<Option Feature="Batch.Server" Cost="172"/>
+					<Option Feature="Batch.BPD_Service" Cost="81"/>
+					<Option Feature="Batch.BCU_Server" Shared="yes" Cost="140"/>
+
+——Aspen Audit and Compliance Manager	<Option Feature="AlarmAndEvent.Server" Shared="yes" Cost="110"/>
+	
+               			<Option DependOn="TYP_Diagnostics"/>				
+                		<Option DependOn="TYP_A1ShareX86"/>
+
+——【Aspen Administration Tools】	<Option DependOn="TYP_AdmTools_x64"/>
+
+
+—— ——<Option Id="TYP_ADSA_x64" Name="Aspen Infrastructure" DefaultSelected="no" Title="Aspen Infrastructure" Description="A set of tools for administering Aspen Data Source Architecture." SharedComponent = "TYP_A1ShareX86,TYP_Diagnostics">
+——————Aspen Data Source Architecture <Option Feature="ADSA.WebService" Shared="yes" Cost="30"/>
+		<Option Feature="ADSA.Server" Shared="yes" Cost="21"/>
+		<Option DependOn="TYP_Diagnostics"/>
+ 		<Option DependOn="TYP_A1ShareX86"/>	
+	   —— ——<Option DependOn="TYP_SECURITY_x64"/>
+                       ————Aspen Local Security Server  <Option Feature="ALS.dotNetSecurity" Shared="yes" Cost="1"/>
+							<Option Feature="ALS.WebConsole" Cost="14"/>             
+				   			<Option Feature="ALS.ALSServer" Shared="yes" Cost="55"/>
+
+				   
+     </Option>
+---------------------------------------------------------------------------------------------------------------------
+：：Aspen Batch Interfaces
+	——Aspen Interfaces (64bit)  <Option Feature="Interfacesx64.APRM_BCU" Cost="151"/>
+				    <Option Feature="Interfacesx64.APRM_Connect" Cost="150"/>
+				    <Option Feature="Interfacesx64.APRM_Extractor" Cost="158"/>
+
+   ——Aspen Production Record Manager   <Option Feature="Batch.BCU_Server" Cost="140"/>
+
+					<Option DependOn="TYP_Diagnostics"/>
+					<Option DependOn="TYP_A1ShareX64"/>
+-------------------------------------------------------------------------------------------------------------------
+
+：：Aspen Role based Visualization
+	——Aspen Role Based Visualization (64bit)	<Option Feature="ASPENRBVX64.RtView" Cost="139"/>
+							<Option Feature="ASPENRBVX64.SharePoint" Cost="21"/>
+							<Option Feature="ASPENRBVX64.Visualiation" Cost="29"/>
+							<Option Feature="ASPENRBVX64.IDK" Cost="0"/>
+
+							<Option DependOn="TYP_Diagnostics"/>
+							<Option DependOn="TYP_A1ShareX64"/>
+-----------------------------------------------------------------------------------------------------------------
+：：Aspen Production Execution Manager Server(64bit)
+——Aspen Production Execution Manager (64bit)	<Option Feature="APEM_x64.Server" Cost="158"/>
+						<Option Feature="APEM_x64.Web_Server" Cost="183"/>
+						<Option Feature="APEM_x64.Client" Cost="209"/>
+
+——Aspen Production Execution Manager            <Option Feature="AEBRS.Server_MSSQL" Cost="41"/>
+
+——Aspen Audit and Compliance Manager	        <Option Feature="AlarmAndEvent.Server" Shared="yes" Cost="110"/>
+——Aspen Data Source Architecture	        <Option Feature="ADSA.WebService" Shared="yes" Cost="30"/>
+
+	 					<Option DependOn="TYP_A1ShareX86"/>
+                				<Option DependOn="TYP_A1ShareX64"/>
+						<Option DependOn="TYP_Diagnostics"/>
+
+——【Aspen Administration Tools】   		<Option DependOn="TYP_AdmTools_x64"/>
+				
+—— ——<Option Id="TYP_ADSA_x64" Name="Aspen Infrastructure" DefaultSelected="no" Title="Aspen Infrastructure" Description="A set of tools for administering Aspen Data Source Architecture." SharedComponent = "TYP_A1ShareX86,TYP_Diagnostics">
+——————Aspen Data Source Architecture <Option Feature="ADSA.WebService" Shared="yes" Cost="30"/>
+		<Option Feature="ADSA.Server" Shared="yes" Cost="21"/>
+		<Option DependOn="TYP_Diagnostics"/>
+ 		<Option DependOn="TYP_A1ShareX86"/>	
+	   —— ——<Option DependOn="TYP_SECURITY_x64"/>
+                       ————Aspen Local Security Server  <Option Feature="ALS.dotNetSecurity" Shared="yes" Cost="1"/>
+							<Option Feature="ALS.WebConsole" Cost="14"/>             
+				   			<Option Feature="ALS.ALSServer" Shared="yes" Cost="55"/>
+							<Option DependOn="TYP_Diagnostics"/>
+				   
+     </Option>				
+			
+---------------------------------------------------------------------------------------------------------------
+：：Aspen Interfrstructure
+——Aspen Data Source Architecture	<Option Feature="ADSA.WebService" Shared="yes" Cost="30"/>
+					<Option Feature="ADSA.Server" Shared="yes" Cost="21"/>
+					<Option DependOn="TYP_Diagnostics"/>
+					<Option DependOn="TYP_A1ShareX86"/>
+—— ——<Option DependOn="TYP_SECURITY_x64"/>
+                       ————Aspen Local Security Server  <Option Feature="ALS.dotNetSecurity" Shared="yes" Cost="1"/>
+							<Option Feature="ALS.WebConsole" Cost="14"/>             
+				   			<Option Feature="ALS.ALSServer" Shared="yes" Cost="55"/>								<Option DependOn="TYP_Diagnostics"/>
+----------------------------------------------------------------------------------------------------------------				
+：： Aspen Local Security Server
+
+————Aspen Local Security Server	<Option Feature="ALS.dotNetSecurity" Shared="yes" Cost="1"/>
+				<Option Feature="ALS.WebConsole" Cost="14"/>
+				<Option Feature="ALS.ALSServer" Shared="yes" Cost="55"/>
+				<Option DependOn="TYP_Diagnostics"/>				
+---------------------------------------------------------------------------------------------------------------
+
+#####################aspenONE Plant Operations Family(32-bit)##########################
+
+:: Aspen Operations Reconciliation and Accounting Server
+——Aspen Operations Reconciliation and Accounting    <Option Feature="Advisor.DBTool" Shared="yes" Cost="122"/>
+				<Option Feature="Advisor.ERP_Module" Shared="yes" Cost="86"/>
+				<Option Feature="Advisor.Expert" Shared="yes" Cost="125"/>
+
+				<Option Feature="Advisor.Hist_IP" Shared="yes" Cost="33"/>
+				<Option Feature="Advisor.Hist_PI" Shared="yes" Cost="28"/>
+				<Option Feature="Advisor.Hist_ProcData" Shared="yes" Cost="30"/>
+
+				<Option Feature="Advisor.LightWeightAdapter" Shared="yes" Cost="111"/>
+                		<Option Feature="Advisor.MathSys" Shared="yes" Cost="116"/>
+				<Option Feature="Advisor.PasswordMaintanceUtility" Shared="yes" Cost="120"/>
+				<Option Feature="Advisor.Planning_Module" Shared="yes" Cost="86"/>
+				<Option Feature="Advisor.Plant_Model_Configuration_Tool" Shared="yes" Cost="131"/>
+				<Option Feature="Advisor.ReconPub" Cost="120"/>
+				<Option Feature="Advisor.Reporter" Shared="yes" Cost="150"/>
+				<Option Feature="Advisor.SandR_Module" Shared="yes" Cost="86"/>
+				<Option Feature="Advisor.SSInterface" Shared="yes" Cost="123"/>
+
+(——Aspen Audit and Compliance Manager)	<Option Feature="AlarmAndEvent.Server" Shared="yes" Cost="110"/>
+
+(——Aspen Data Source Architecture)	<Option Feature="ADSA.Server" Shared="yes" Cost="21"/>
+								<Option DependOn="TYP_Diagnostics"/>
+								<Option DependOn="TYP_A1ShareX86"/>
+——[Aspen Operations Reconciliation and Accounting Desktop Apps] <Option DependOn="TYP_AORA_USER"/>
+----------------------------------------------------------------------------------------------------------------				
+:: Aspen Tank and Operations Manager Server
+——Aspen Tank and Operations Manager	<Option Feature="AtOMS.Client" Shared="yes" Cost="146"/>
+					<Option Feature="AtOMS.Interfaces" Shared="yes" Cost="122"/>
+					<Option Feature="AtOMS.Importer" Cost="59"/>
+					<Option Feature="AtOMS.Viewer" Cost="61"/>
+					<Option Feature="AtOMS.Server" Cost="200"/>
+					<Option Feature="AtOMS.TankCalcWeb" Cost="120"/>
+
+					<Option DependOn="TYP_Diagnostics"/>
+					<Option DependOn="TYP_A1ShareX86"/>
+
+——[Aspen Tank and Operations Manager Desktop Apps] 	<Option DependOn="TYP_ATOMS_USER"/>
+——【Aspen Web Server】                			<Option DependOn="TYP_WebServer_x64"/>		
+--------------------------------------------------------------------------------------------------------------------
+:: Aspen Tank and Operations Manager Desktop Apps
+				<Option Feature="AtOMS.Client" Cost="146"/>
+				<Option Feature="AtOMS.Interfaces" Cost="122"/>
+				<Option DependOn="TYP_Diagnostics"/>
+				<Option DependOn="TYP_A1ShareX86"/>	
+——[Aspen Operations Reconciliation and Accounting Desktop Apps]       <Option DependOn="TYP_AORA_USER"/>
+-------------------------------------------------------------------------------------------------------------------				
+：： Aspen Operarations Reconciliation and Accounting Desktop Apps
+
+——Aspen Operations Reconciliation and Accounting	  <Option Feature="Advisor.Connect" Cost="123"/>
+				<Option Feature="Advisor.DBTool" Cost="122"/>
+				<Option Feature="Advisor.ERP_Module" Cost="86"/>
+				<Option Feature="Advisor.Expert" Cost="125"/>
+
+				<Option Feature="Advisor.Hist_IP" Cost="33"/>
+				<Option Feature="Advisor.Hist_PI" Cost="28"/>
+				<Option Feature="Advisor.Hist_ProcData" Cost="30"/>
+
+				<Option Feature="Advisor.LightWeightAdapter" Cost="111"/>
+				<Option Feature="Advisor.MathSys" Cost="116"/>				
+				<Option Feature="Advisor.PasswordMaintanceUtility" Cost="120"/>
+				<Option Feature="Advisor.Planning_Module" Cost="86"/>							
+				<Option Feature="Advisor.Plant_Model_Configuration_Tool" Cost="131"/>				
+				<Option Feature="Advisor.Reporter" Cost="150"/>
+				<Option Feature="Advisor.SandR_Module" Cost="86"/>
+				<Option Feature="Advisor.SSInterface" Cost="123"/>
+
+——Aspen Audit and Compliance Manager	<Option Feature="AlarmAndEvent.Administrator" Shared="yes" Cost="83"/>
+
+——Aspen Process Data		<Option Feature="ProcessData.Aspen_Calc" Shared="yes" Cost="54"/>
+				<Option Feature="ProcessData.Aspen_Process_Data" Shared="yes" Cost="104"/>
+				<Option Feature="ProcessData.Cimview" Shared="yes" Cost="48"/>
+				<Option Feature="ProcessData.File" Shared="yes" Cost="48"/>
+				<Option Feature="ProcessData.InfoPlus.21_and_Setcim" Shared="yes" Cost="47"/>
+				<Option Feature="ProcessData.ODM" Shared="yes" Cost="46"/>
+				<Option Feature="ProcessData.OPC_HDA" Shared="yes" Cost="58"/>
+				<Option Feature="ProcessData.PHD" Shared="yes" Cost="46"/>
+				<Option Feature="ProcessData.PI" Shared="yes" Cost="46"/>
+				<Option Feature="ProcessData.RDBMS" Shared="yes" Cost="47"/>
+				<Option Feature="ProcessData.Simulator" Shared="yes" Cost="46"/>
+				<Option Feature="ProcessData.Web.21" Shared="yes" Cost="46"/>
+				<Option DependOn="TYP_Diagnostics"/>
+				<Option DependOn="TYP_A1ShareX86"/>	
